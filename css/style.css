@@ -1,0 +1,23 @@
+table, td, th {
+    border: 0px solid black;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    text-align: left;
+  }
+  input{
+    width:100%;
+  }
+  small{
+    color: red;
+  }
+
+  .container{
+    padding-left: 10%;
+    width: 100%;
+  }
