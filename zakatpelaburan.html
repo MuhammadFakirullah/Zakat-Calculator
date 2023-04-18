@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat</title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--card-->
+    <link rel="stylesheet" href="card.css">
+
+    <!--Attach JS files-->
+    <script src="js/zakatpelaburan.js"></script>
+
+</head>
+<body>
+    
+    <!--Navbar-->
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-calculator"></i> Kalkulator Zakat
+        </a>
+    </nav>
+
+    <!--Sidebar-->
+    <div class="sidebar">
+        <a style="pointer-events: none"><b>Pengiraan Zakat</b></a>
+        <a href="index.html">Zakat Pendapatan</a>
+        <a href="zakatperniagaan.html">Zakat Perniagaan</a>
+        <a href="zakatwangsimpanan.html">Zakat Wang Simpanan</a>
+        <a href="zakatpelaburan.html">Zakat Pelaburan</a>
+        <a href="zakatkwsp.html">Zakat KWSP</a>
+        <a href="zakatemas&perak.html">Zakat Emas</a>
+    </div>
+
+    <div class="container"><br>
+        <div class="card">
+            <div class="card-header">
+              Zakat Pelaburan @ Saham
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p><b>1. Kiraan saham yang dimiliki melebihi setahun</b></p>
+                <form>
+                    <label for="current-value">Nilai saham semasa (RM):</label>
+                    <input type="number" id="current-value" name="current-value" required>
+                    <br>
+                    <label for="current-balance">Baki semasa akaun amanah (RM):</label>
+                    <input type="number" id="current-balance" name="current-balance" required>
+                    <br>
+                    <label for="dividend">Dividen:</label>
+                    <input type="number" id="dividend" name="dividend" required>
+                    <br>
+                    <label for="related-cost">Kos berkaitan:</label>
+                    <input type="number" id="related-cost" name="related-cost" required>
+                    <br><br>
+                    <input type="button" value="Kira Zakat" onclick="calculateZakat6()">
+                  </form><br>
+                  <div id="zakat-result"></div>
+              </blockquote>
+            </div>
+        </div>          
+    </div>
+
+    <div class="container"><br>
+        <div class="card">
+            <div class="card-header">
+              Zakat Pelaburan @ Saham
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p><b>2. Kiraan saham yang dijual beli dalam tempoh setahun</b></p>
+                <form>
+                    <label for="currentValue">Nilai saham semasa (RM):</label>
+                    <input type="number" id="currentValue" name="currentValue" required><br>
+              
+                    <label for="currentBalance">Baki semasa akaun amanah (RM):</label>
+                    <input type="number" id="currentBalance" name="currentBalance" required><br>
+              
+                    <label for="relatedCost">Kos berkaitan:</label>
+                    <input type="number" id="relatedCost" name="relatedCost" required><br><br>
+              
+                    <input type="button" value="Kira Zakat" onclick="calculateZakat7()">
+                  </form><br>
+                  <div id="result123"></div>
+              </blockquote>
+            </div>
+        </div>          
+    </div>
+</body>
+</html>
+</body>
+</html>
